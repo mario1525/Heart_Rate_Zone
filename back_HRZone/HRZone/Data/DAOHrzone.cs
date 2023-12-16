@@ -1,11 +1,6 @@
 ﻿using Data.SqlClient;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Entities;
 
 namespace Data
@@ -45,8 +40,8 @@ namespace Data
             string procedureName = "dbo.db_sp_HRzone_Get";
             SqlParameter[] parameters =
             {
-                new SqlParameter("@Id", hrzId),
-                new SqlParameter("@Id_users", ""),
+                new SqlParameter("@Id",""),
+                new SqlParameter("@Id_users", hrzId),
                 new SqlParameter("@BMPMax", ""),
                 new SqlParameter("@Light", ""),
                 new SqlParameter("@Intensive", ""),
@@ -59,14 +54,12 @@ namespace Data
         }
 
         // Crear 
-        public async Task<Mensaje> CreateHrz(HRzone hrzone)
+        public void CreateHrz(HRzone hrzone)
         {
-            Mensaje mensaje = new Mensaje();
+            
             if (hrzone == null)
             {               
-                mensaje.Status = 400;
-                mensaje.mensaje = "no se cargo ningun Hrz";
-                return mensaje;
+              
                 throw new ArgumentNullException(nameof(hrzone));
             }
 
@@ -83,13 +76,10 @@ namespace Data
                 new SqlParameter("@VoMax", hrzone.VoMax),
                 new SqlParameter("@Operacion", "I"),
             };
-            await _sqlClient.ExecuteStoredProcedure(procedureName, parameters);
+            _sqlClient.ExecuteStoredProcedure(procedureName, parameters);
             // _sqlClient.
             
-            mensaje.Status = 200;
-            mensaje.mensaje = "cargado correctamente";
-            return mensaje;
-            
+                      
         }
 
         // Actualizar 

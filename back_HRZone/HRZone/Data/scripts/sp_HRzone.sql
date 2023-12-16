@@ -26,18 +26,19 @@ CREATE PROCEDURE dbo.db_sp_HRzone_Get
     @VoMax				FLOAT
 AS 
 BEGIN
-	SELECT Id, Id_users, BMPMax, Light, Intensive, Aerobic, Anaerobic, VoMax, Eliminado		
-		FROM dbo.HRzone
-		WHERE Id =Case when IsNull(@Id,'')='' Then Id Else @Id End
-		AND Id_users =Case when IsNull(@Id_users,'')='' Then Id_users Else @Id_users END
-		AND BMPMax LIKE Case when IsNull(BMPMax,'')='' Then BMPMax Else @BMPMax END
-		AND Light =Case when IsNull(@Light,'')='' Then Light Else @Light END
-		AND Intensive LIKE Case when IsNull(@Intensive,'')='' Then Intensive Else @Intensive END
-		AND Aerobic =Case when IsNull(@Aerobic,'')='' Then Aerobic Else @Aerobic END
-		AND Anaerobic LIKE Case when IsNull(@Anaerobic,'')='' Then Anaerobic Else @Anaerobic END
-		AND VoMax =Case when IsNull(@VoMax,'')='' Then VoMax Else @VoMax END						
-		AND Eliminado = 0
+	SELECT Id, Id_users, BMPMax, Light, Intensive, Aerobic, Anaerobic, VoMax, Fecha_log, Eliminado		
+	FROM dbo.HRzone
+	WHERE (Id = ISNULL(@Id, Id) OR ISNULL(@Id, '') = '')
+	AND (Id_users = ISNULL(@Id_users, Id_users) OR ISNULL(@Id_users, '') = '')
+	AND (BMPMax = ISNULL(@BMPMax, BMPMax) OR ISNULL(@BMPMax, '') = '')
+	AND (Light = ISNULL(@Light, Light) OR ISNULL(@Light, '') = '')
+	AND (Intensive = ISNULL(@Intensive, Intensive) OR ISNULL(@Intensive, '') = '')
+	AND (Aerobic = ISNULL(@Aerobic, Aerobic) OR ISNULL(@Aerobic, '') = '')
+	AND (Anaerobic = ISNULL(@Anaerobic, Anaerobic) OR ISNULL(@Anaerobic, '') = '')
+	AND (VoMax = ISNULL(@VoMax, VoMax) OR ISNULL(@VoMax, '') = '')
+	AND Eliminado = 0
 END
+
 
 PRINT 'Creacion procedimiento set'
 GO

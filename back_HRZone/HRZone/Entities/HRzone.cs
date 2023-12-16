@@ -67,8 +67,8 @@ namespace Entities
             set { _VoMax = value; }
         }
 
-        private bool _Eliminado;
-        public bool Eliminado
+        private string _Eliminado;
+        public string Eliminado
         {
             get { return _Eliminado; }
             set { _Eliminado = value; }

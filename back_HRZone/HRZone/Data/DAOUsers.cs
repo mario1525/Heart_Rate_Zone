@@ -21,10 +21,11 @@ namespace Data
         // Obtener todos los usuarios
         public async Task<DataTable> GetUsers()
         {
-            string procedureName = "dbo.db_sp_Usuarios_Get";
+            string procedureName = "dbo.db_sp_Users_Get";
             SqlParameter[] parameters =
            {
                 new SqlParameter("@Id", "" ),
+                new SqlParameter("@Nombre", "" ),
                 new SqlParameter("@Usuario", ""),
                 new SqlParameter("@Usuario_validacion", ""),
                 new SqlParameter("@Contraseña", " "),
@@ -138,6 +139,7 @@ namespace Data
             SqlParameter[] parameters =
             {
                 new SqlParameter("@Id", "" ),
+                new SqlParameter("@Nombre", ""),
                 new SqlParameter("@Usuario", ""),
                 new SqlParameter("@Usuario_validacion", Usuario),
                 new SqlParameter("@Contraseña", ""),

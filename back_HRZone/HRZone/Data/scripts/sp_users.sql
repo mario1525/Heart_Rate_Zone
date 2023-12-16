@@ -25,7 +25,7 @@ CREATE PROCEDURE dbo.db_sp_Users_Get
 	@Estado							INT 
 AS 
 BEGIN
-	SELECT Id, Usuario, Contraseña, Rol, Estado, Eliminado, Fecha_log		
+	SELECT Id, Nombre, Usuario, Contraseña, Rol, Estado, Eliminado, Fecha_log		
 		FROM dbo.Users
 		WHERE Id = CASE WHEN ISNULL(@Id,'')='' THEN Id ELSE @Id END
 		AND Nombre LIKE CASE WHEN ISNULL(@Nombre,'')='' THEN Nombre ELSE '%'+@Nombre+'%' END

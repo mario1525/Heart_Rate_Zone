@@ -36,8 +36,10 @@ namespace Buisnes
             return await _daoUser.CreateUser(user);
         }
 
-        public async Task<Mensaje> UpdateUser(Users user)
-        {
+        public async Task<Mensaje> UpdateUser(String Id, Users user)
+        { 
+            // agregar el id al objeto user 
+             user.Id = Id;
             // lógica para actualizar un usuario en el repositorio de datos
             return await _daoUser.UpdateUser(user);
         }

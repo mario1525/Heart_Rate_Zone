@@ -27,7 +27,7 @@ BEGIN
 		Eliminado	  BIT NOT NULL DEFAULT 0, /*id interno del registro*/
         Fecha_log     SMALLDATETIME DEFAULT CURRENT_TIMESTAMP /*log fecha*/)ON [PRIMARY]
 	ALTER TABLE dbo.Users ADD CONSTRAINT 
-		PK_Users PRIMARY KEY CLUSTERED (id) ON [PRIMARY] 
+		PK_Users PRIMARY KEY CLUSTERED (Id) ON [PRIMARY] 
 END
 GO
 
