@@ -1,0 +1,11 @@
+<main>
+  <div>
+    <form [formGroup]="myformulario" (ngSubmit)="submitFormulario()" class="formulario">
+      <input formControlName="idproducto" type="text" minlength="5" [value]="myformulario.value.idproducto" />
+      <div>
+        <button>Consultar</button>
+        <button type="button" (click)="registro_producto()">Registrar</button>
+      </div>
+    </form>
+  </div>
+</main>

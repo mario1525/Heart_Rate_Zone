@@ -31,6 +31,7 @@ namespace Buisnes
             return Hrzs;
         }
 
+
         public async Task<HRzone> CreateHrz(HRzone hrzone)
         {
             //calculo de las zonas

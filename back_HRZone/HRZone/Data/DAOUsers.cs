@@ -58,6 +58,44 @@ namespace Data
 
         }
 
+        // obtener usuario por username
+        public async Task<DataTable> GetUserByUser(string usuario)
+        {
+            string procedureName = "dbo.db_sp_Users_Get";
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@Id",""),
+                new SqlParameter("@Nombre", ""),
+                new SqlParameter("@Usuario", usuario),
+                new SqlParameter("@Usuario_validacion", ""),
+                new SqlParameter("@Contraseña", ""),
+                new SqlParameter("@Contraseña_validacion", ""),
+                new SqlParameter("@Rol", ""),
+                new SqlParameter("@Estado", 1)
+            };
+            //Console.WriteLine($"Id: {parameters[0].Value}, Usuario: {parameters[1].Value}, Usuario_vali: {parameters[3].Value}, ...");
+            return await _sqlClient.ExecuteStoredProcedure(procedureName, parameters);
+
+        }
+        // validar usernename y password 
+        public async Task<DataTable> GetUserByUserpsw(string User, string passw)
+        {
+            string procedureName = "dbo.db_sp_Users_Get";
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@Id",""),
+                new SqlParameter("@Nombre", ""),
+                new SqlParameter("@Usuario", ""),
+                new SqlParameter("@Usuario_validacion",  User),
+                new SqlParameter("@Contraseña", ""),
+                new SqlParameter("@Contraseña_validacion", passw),
+                new SqlParameter("@Rol", ""),
+                new SqlParameter("@Estado", 1)
+            };
+            //Console.WriteLine($"Id: {parameters[0].Value}, Usuario: {parameters[1].Value}, Usuario_vali: {parameters[3].Value}, ...");
+            return await _sqlClient.ExecuteStoredProcedure(procedureName, parameters);
+
+        }
         // Crear un nuevo usuario
         public async Task<Mensaje> CreateUser(Users user)
         {

@@ -5,6 +5,7 @@ using Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
+using System.IdentityModel.Tokens.Jwt;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,9 +24,6 @@ builder.Services.AddScoped<ClientSql>(provider =>
     var clientSql = new ClientSql(connectionString);
     return clientSql;
 });
-
-
-
 
 builder.Services.AddScoped<UsersContrlollogical>();
 builder.Services.AddScoped<DAOUsers>();
@@ -50,6 +48,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapRazorPages();
 app.UseEndpoints(endpoints =>

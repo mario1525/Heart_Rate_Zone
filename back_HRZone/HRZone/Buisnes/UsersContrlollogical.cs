@@ -30,6 +30,26 @@ namespace Buisnes
             return usuarios;
         }
 
+        public async  Task<List<Users>> FindByNameAsync(string username)
+        {
+            Task<DataTable> taskDataTable =  _daoUser.GetUserByUser(username);
+            DataTable usuario = taskDataTable.Result;
+            List<Users> usuarios = MapDataTableToUsuariosList(usuario);
+            return usuarios;
+        }
+
+        public async Task<bool> CheckPasswordAsync(List<Users> users, string pasww)
+        {
+            Task<DataTable> taskDataTable = _daoUser.GetUserByUserpsw(users[0].Usuario, pasww);
+
+            if (taskDataTable == null)
+            {
+                return false;
+            }
+            
+            return true;
+        }
+
         public async Task<Mensaje> CreateUser(Users user)
         {
             // la lógica para crear un nuevo usuario en el repositorio de datos

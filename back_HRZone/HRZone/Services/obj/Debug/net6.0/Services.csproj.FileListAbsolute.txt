@@ -42,3 +42,8 @@ C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Service
 C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\obj\Debug\net6.0\Services.pdb
 C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\obj\Debug\net6.0\Services.genruntimeconfig.cache
 C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\obj\Debug\net6.0\ref\Services.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
