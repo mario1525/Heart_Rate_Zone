@@ -82,8 +82,8 @@ namespace Buisnes
                     Usuario = row["Usuario"].ToString(),
                     password = row["Contraseña"].ToString(),
                     Rol = row["Rol"].ToString(),
-                    Estado = row["Estado"].ToString(),
-                    Eliminado = row["Eliminado"].ToString(),
+                    Estado = (bool)row["Estado"],
+                    Eliminado = (bool)row["Eliminado"],
                     Fecha_log = row["Fecha_log"].ToString(),
                     // Asigna otras propiedades según tu DataTable y clase Usuarios
                 };

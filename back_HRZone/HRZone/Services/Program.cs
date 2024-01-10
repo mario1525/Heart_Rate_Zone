@@ -3,6 +3,7 @@ using Data;
 using Entities; 
 using Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authentication;
 using System;
 using System.IO;
 using System.IdentityModel.Tokens.Jwt;
@@ -25,6 +26,7 @@ builder.Services.AddScoped<ClientSql>(provider =>
     return clientSql;
 });
 
+builder.Services.AddScoped<authControllogical>();
 builder.Services.AddScoped<UsersContrlollogical>();
 builder.Services.AddScoped<DAOUsers>();
 builder.Services.AddScoped<Users>();

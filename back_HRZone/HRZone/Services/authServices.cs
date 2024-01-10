@@ -26,7 +26,7 @@ namespace Services
             if (user != null &&  await _UsConLogical.CheckPasswordAsync(user, model.password))
             {
                 // Verifica el estado y eliminación del usuario si es necesario
-                if (user[0].Estado == "1" && user[0].Eliminado == "0")
+                if (user[0].Estado  && !user[0].Eliminado)
                 {
                     Token token = _AuthControlLogical.GenerateJwtToken(user);
                     return Ok(token);

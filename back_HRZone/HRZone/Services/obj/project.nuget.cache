@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Z6F/v/XiPTWafmQvMdXh0oTCgq9MsFiFlL9r/4uMlOsemImYrZlsxg5kXG7+et03N53Dqeo5zXN3SS78vVq++w==",
+  "dgSpecHash": "BjwcrOFt9Rr6pHWh4BHlJc+CikGtGhomrw2GWh8TUiDqhJyQ4CXReEb93Sp+537n8toeLBbulwvS61WpmJY8vA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ANA ROSA\\Desktop\\almacen\\dev\\Heart_Rate_Zone\\back_HRZone\\HRZone\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\ANA ROSA\\.nuget\\packages\\microsoft.identitymodel.logging\\7.0.3\\microsoft.identitymodel.logging.7.0.3.nupkg.sha512",
     "C:\\Users\\ANA ROSA\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.0.3\\microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
     "C:\\Users\\ANA ROSA\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\ANA ROSA\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
     "C:\\Users\\ANA ROSA\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ANA ROSA\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\ANA ROSA\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

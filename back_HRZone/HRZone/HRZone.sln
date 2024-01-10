@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Buisnes", "3.Buisnes", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Services", "4.Services", "{A41EB444-8930-4FBD-95F7-3D277836DC57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{BB254F8A-4ED0-4974-8D90-74000F401525}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{BB254F8A-4ED0-4974-8D90-74000F401525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{9C2DD668-3472-4D67-B95C-320CFC8668D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{9C2DD668-3472-4D67-B95C-320CFC8668D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buisnes", "Buisnes\Buisnes.csproj", "{79225B1D-2717-4D69-B330-E33E3917CA80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buisnes", "Buisnes\Buisnes.csproj", "{79225B1D-2717-4D69-B330-E33E3917CA80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{6A276345-825A-4D52-B54F-64A2CC0849DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{6A276345-825A-4D52-B54F-64A2CC0849DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

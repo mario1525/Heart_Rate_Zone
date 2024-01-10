@@ -42,15 +42,15 @@ namespace Entities
             set { _Rol = value; }
         }
 
-        private string _Estado;
-        public string Estado
+        private bool _Estado;
+        public bool Estado
         {
             get { return _Estado; }
             set { _Estado = value; }
         }
 
-        private string _Eliminado;
-        public string Eliminado
+        private bool _Eliminado;
+        public bool Eliminado
         {
             get { return _Eliminado; }
             set { _Eliminado = value; }
