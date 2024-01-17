@@ -1,0 +1,17 @@
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\bin\Release\net6.0\Buisnes.deps.json
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\bin\Release\net6.0\Buisnes.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\bin\Release\net6.0\Buisnes.pdb
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\bin\Release\net6.0\Data.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\bin\Release\net6.0\Entities.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\bin\Release\net6.0\Data.pdb
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\bin\Release\net6.0\Entities.pdb
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\obj\Release\net6.0\Buisnes.csproj.AssemblyReference.cache
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\obj\Release\net6.0\Buisnes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\obj\Release\net6.0\Buisnes.AssemblyInfoInputs.cache
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\obj\Release\net6.0\Buisnes.AssemblyInfo.cs
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\obj\Release\net6.0\Buisnes.csproj.CoreCompileInputs.cache
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\obj\Release\net6.0\Buisnes.csproj.CopyComplete
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\obj\Release\net6.0\Buisnes.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\obj\Release\net6.0\refint\Buisnes.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\obj\Release\net6.0\Buisnes.pdb
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Buisnes\obj\Release\net6.0\ref\Buisnes.dll

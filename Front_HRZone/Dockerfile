@@ -1,4 +1,8 @@
-FROM ubuntu:latest
-LABEL authors="ANA ROSA"
+FROM node:19
 
-ENTRYPOINT ["top", "-b"]
+WORKDIR /app
+
+COPY . ./
+
+RUN npm install
+RUN npm run build
