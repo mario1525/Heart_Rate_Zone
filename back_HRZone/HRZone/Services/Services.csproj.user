@@ -2,6 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <NameOfLastUsedPublishProfile>C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
-    <ActiveDebugProfile>Docker</ActiveDebugProfile>
+    <ActiveDebugProfile>Services</ActiveDebugProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

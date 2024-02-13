@@ -47,3 +47,6 @@ C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Service
 C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ANA ROSA\Desktop\almacen\dev\Heart_Rate_Zone\back_HRZone\HRZone\Services\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

@@ -1,5 +1,6 @@
 ﻿using Buisnes;
 using Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Services
@@ -17,6 +18,7 @@ namespace Services
 
         // get: api/todoitems
         [HttpGet]
+        [Authorize]
         public List<HRzone> getHrz()
         {
             return _HrzoneControllogical.GetHrzs();
@@ -26,6 +28,7 @@ namespace Services
         // get: api/todoitems/5
         // <snippet_getbyid>
         [HttpGet("{id}")]
+        [Authorize]
         public List<HRzone> getHrz(string id)
         {
 
@@ -37,6 +40,7 @@ namespace Services
         // put: api/todoitems/5
         // <snippet_update>
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<Mensaje> putHrz(string id, HRzone usuario)
         {
             return await _HrzoneControllogical.UpdateUser(id, usuario);
@@ -46,6 +50,7 @@ namespace Services
         // post: api/todoitems
         // <snippet_create>
         [HttpPost]
+        [Authorize]
         public async Task<HRzone> postHrz(HRzone hrzone)
         {
             return await _HrzoneControllogical.CreateHrz(hrzone);
@@ -56,6 +61,7 @@ namespace Services
 
         // delete: api/todoitems/5
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<Mensaje> deleteHrz(string id)
         {
             return await _HrzoneControllogical.DeleteHrz(id);

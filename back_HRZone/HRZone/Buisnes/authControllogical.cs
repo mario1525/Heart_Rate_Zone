@@ -27,10 +27,11 @@ namespace Buisnes
 
             var claims = new[]
             {
-        new Claim(JwtRegisteredClaimNames.Sub, user[0].Usuario),
-        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        // Puedes agregar más claims según tus necesidades
-    };
+                 new Claim(JwtRegisteredClaimNames.Sub, user[0].Usuario),
+                 new Claim("role", user[0].Rol),
+                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                // Puedes agregar más claims según tus necesidades
+            };
 
             var token = new JwtSecurityToken(
                 issuer: "TuIssuer",
